@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" sizes="192x192" href="/images/seed.png">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section-header span {
+            font-size: 18px;
+            color: #007b5e;
+            font-weight: 600;
+        }
+
+        .lead {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        /* Section Styling */
+        .py-5 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        /* Main Content Styling */
+        .row {
+            display: flex;
+            justify-content: center; /* Centers the content */
+            gap: 30px;
+            flex-wrap: wrap; /* Ensures the layout adapts on smaller screens */
+        }
+
+        .col-md-6 {
+            width: 100%;  /* Set width to 100% for all screen sizes */
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 28px;
+            }
+
+            .lead {
+                font-size: 16px;
+            }
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .col-md-6 {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+
+        /* Button Styling */
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007b5e;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center; /* Centers text in button */
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .cta-button:hover {
+            background-color: #005e47;
+        }
+        .about-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-muted">Our Story</span>
+                <h2 class="display-5 fw-bold">About Us</h2>
+                <img src="/images/farmer.png" alt="Farm-to-table" class="about-image">
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="lead">At Seed to Serve, we believe in the power of fresh, locally grown food. Our mission is to connect you with local farmers who are committed to sustainable, healthy practices. By offering farm-to-table products, we provide you with fresh, nutritious food directly from the farm to your home.</p>
+                    <p class="lead">We work with farmers who grow their crops without harmful chemicals or pesticides, ensuring the best quality produce. From seasonal fruits and vegetables to dairy, eggs, and artisanal goods, we bring you a wide variety of products every day.</p>
+                    <p class="lead">Our marketplace is more than just a place to buy food — it’s a community. We aim to support local farmers and food producers by creating a direct connection with consumers. Every purchase you make helps sustain local agriculture and boosts the local economy.</p>
+                    <p class="lead">Transparency is key at Seed at Serve. We make it easy for you to know where your food comes from and who is producing it. Whether it's a local farm, a small family-owned business, or a dedicated artisan, we want you to feel confident in your food choices.</p>
+                    <p class="lead">We strive to minimize our environmental impact by reducing packaging and promoting sustainable farming practices. Our goal is to offer not only the best food but also a more eco-friendly way to shop.</p>
+                    <p class="lead">At Seed to Serve we believe that supporting local farmers and eating seasonally is the best way to nourish our bodies and our community. We are dedicated to making it easier for you to access fresh, healthy, and locally sourced food.</p>
+                    <p class="lead">Thank you for choosing to shop with us and support sustainable farming. Together, we can build a healthier, more sustainable future for all.</p>
+                </div>
+            </div>
+            <!-- Center the button -->
+            <a href="/contact" class="cta-button">Join Our Community</a>
+        </div>
+    </section>
+</body>
+</html>

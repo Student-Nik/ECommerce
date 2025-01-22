@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terms of Service - The Local Farm-to-Table Marketplace</title>
+    <link rel="icon" sizes="192x192" href="/images/seed.png">
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body and page setup */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 15px;
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 40px;
+    border-top: 2px solid #e2e2e2;
+    padding-top: 20px;
+}
+
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Terms of Service for The Local Farm-to-Table Marketplace</h1>
+        <p>Effective Date: <strong>1st Januaray 2025</strong></p>
+    </header>
+
+    <section>
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>The Local Farm-to-Table Marketplace</strong>. These Terms of Service ("Terms") govern your access to and use of our online platform, including our website, services, and products. By accessing or using our website and services, you agree to be bound by these Terms. Please read them carefully.</p>
+    </section>
+
+    <section>
+        <h2>2. Use of Our Services</h2>
+        <p>To use our marketplace, you must:</p>
+        <ul>
+            <li>Be at least 18 years of age or have parental consent to use the site.</li>
+            <li>Provide accurate, current, and complete information when creating an account or making a purchase.</li>
+            <li>Comply with all applicable laws and regulations regarding online purchases, product handling, and food safety.</li>
+        </ul>
+        <p>We reserve the right to suspend or terminate accounts for violations of these Terms.</p>
+    </section>
+
+    <section>
+        <h2>3. Account Registration</h2>
+        <p>When registering for an account, you agree to:</p>
+        <ul>
+            <li>Provide accurate information about yourself and update it if necessary.</li>
+            <li>Keep your account information, including your password, confidential.</li>
+            <li>Notify us immediately if you suspect any unauthorized access to your account.</li>
+        </ul>
+        <p>We are not responsible for any loss or damage caused by unauthorized use of your account.</p>
+    </section>
+
+    <section>
+        <h2>4. Product Listings and Availability</h2>
+        <p>We strive to provide accurate descriptions and images of the products listed on our marketplace. However, we cannot guarantee the accuracy or completeness of product information. All products are subject to availability, and we reserve the right to cancel or refuse any order at our discretion.</p>
+        <p>Prices, discounts, and offers are subject to change without notice.</p>
+    </section>
+
+    <section>
+        <h2>5. Payment and Billing</h2>
+        <p>By purchasing products from the marketplace, you agree to provide accurate payment information and authorize us to charge the appropriate amount to your chosen payment method. You are responsible for any taxes, fees, or charges applicable to your purchase.</p>
+        <p>If your payment is declined or if there is an issue with processing your payment, we reserve the right to cancel or hold your order until the issue is resolved.</p>
+    </section>
+
+    <section>
+        <h2>6. Delivery and Shipping</h2>
+        <p>We offer various shipping options, and we aim to deliver products in a timely manner. However, delivery times are not guaranteed, and delays may occur due to circumstances beyond our control.</p>
+        <p>You are responsible for providing accurate shipping information. We are not liable for any delays or losses caused by incorrect or incomplete addresses.</p>
+    </section>
+
+    <section>
+        <h2>7. Returns and Refunds</h2>
+        <p>We want you to be satisfied with your purchase. If you are not happy with a product, please contact us immediately to discuss returns or exchanges. The return process may vary based on the type of product and the reason for return.</p>
+        <p>Refunds are issued at our discretion, and products must be returned in original condition, unused, and unopened.</p>
+    </section>
+
+    <section>
+        <h2>8. Prohibited Activities</h2>
+        <p>You agree not to engage in any of the following activities while using our website or services:</p>
+        <ul>
+            <li>Engaging in fraudulent activity or providing false information.</li>
+            <li>Distributing harmful or unlawful content.</li>
+            <li>Interfering with the operation of our website or attempting to gain unauthorized access to our systems.</li>
+            <li>Using our marketplace to resell products without authorization.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>9. Limitation of Liability</h2>
+        <p>We are not liable for any damages, including but not limited to direct, indirect, incidental, or consequential damages, arising from your use or inability to use our website or products, even if we have been advised of the possibility of such damages.</p>
+    </section>
+
+    <section>
+        <h2>10. Privacy and Data Security</h2>
+        <p>Your use of our services is governed by our <a href="/privacy-policy">Privacy Policy</a>, which outlines how we collect, use, and protect your personal information.</p>
+    </section>
+
+    <section>
+        <h2>11. Modifications to the Terms</h2>
+        <p>We may update or modify these Terms at any time. Any changes will be posted on this page, and the "Effective Date" will be updated accordingly. Your continued use of our services after the changes are posted constitutes your acceptance of the revised Terms.</p>
+    </section>
+
+    <section>
+        <h2>12. Governing Law</h2>
+        <p>These Terms will be governed by and construed in accordance with the laws of the state or country where we are registered, without regard to its conflict of law principles. Any disputes arising from these Terms will be resolved in the appropriate courts of that jurisdiction.</p>
+    </section>
+
+
+
+    <footer>
+        <p><strong>Disclaimer:</strong> This Terms of Service page is for general informational purposes and may be updated periodically. We recommend that you consult with a legal professional to ensure compliance with applicable laws.</p>
+    </footer>
+</body>
+</html>

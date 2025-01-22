@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy Policy - The Local Farm-to-Table Marketplace</title>
+    <link rel="icon" sizes="192x192" href="/images/seed.png">
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body and general page setup */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+    padding: 40px 15px;
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Unordered List (for the points) */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 40px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Style (For any call to action) */
+button {
+    background-color: #2980b9;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy for The Local Farm-to-Table Marketplace</h1>
+        <p>Effective Date: <strong>1st Januaray 2025</strong></p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>At <strong>The Local Farm-to-Table Marketplace</strong>, we are committed to protecting your privacy and ensuring a safe online experience. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website, engage with our services, or make purchases. By accessing or using our website, you agree to the practices outlined in this Privacy Policy.</p>
+    </section>
+
+    <section>
+        <h2>1. Information We Collect</h2>
+        <ul>
+            <li><strong>Personal Identification Information</strong>: This includes your name, email address, phone number, shipping/billing address, and payment details.</li>
+            <li><strong>Transaction Information</strong>: We collect information about the products you purchase, order history, payment method, and shipping details.</li>
+            <li><strong>Usage Data</strong>: We may collect data such as IP address, device type, browser type, and browsing behavior on our website.</li>
+            <li><strong>Communication Information</strong>: Any details provided when you contact us for customer support or other inquiries.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. How We Use Your Information</h2>
+        <p>We use your personal information for various purposes, including:</p>
+        <ul>
+            <li><strong>Order Fulfillment</strong>: To process your orders and provide you with the requested products.</li>
+            <li><strong>Communication</strong>: To notify you about your order status or respond to your inquiries.</li>
+            <li><strong>Marketing</strong>: To send you updates on new products, promotions, or other relevant offers (if you have opted in).</li>
+            <li><strong>Improvement of Services</strong>: To enhance your experience and personalize content, offers, and recommendations.</li>
+            <li><strong>Security</strong>: To protect our website, customers, and prevent fraud.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Sharing Your Information</h2>
+        <p>We respect your privacy and will never sell your personal information. However, we may share your data with trusted third parties in the following scenarios:</p>
+        <ul>
+            <li><strong>Service Providers</strong>: We use third-party companies to assist with processing orders, payments, and deliveries. These companies have access to your information only for those tasks.</li>
+            <li><strong>Business Transactions</strong>: If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of the transaction.</li>
+            <li><strong>Legal Requirements</strong>: We may disclose your information when required by law or to protect the rights and safety of others.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Data Security</h2>
+        <p>We take reasonable precautions to safeguard your personal data from unauthorized access, alteration, or destruction. However, please note that no data transmission over the Internet is 100% secure, and while we strive to protect your information, we cannot guarantee its absolute security.</p>
+    </section>
+
+    <section>
+        <h2>5. Your Rights and Choices</h2>
+        <p>You have the following rights regarding your personal information:</p>
+        <ul>
+            <li><strong>Access and Update</strong>: You can access and update your information through your account settings.</li>
+            <li><strong>Opt-out of Marketing</strong>: You can unsubscribe from our marketing emails at any time by using the link provided in the email or contacting us directly.</li>
+            <li><strong>Cookie Settings</strong>: You can control cookie usage through your browser settings, but disabling cookies may affect the functionality of our website.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Cookies and Tracking Technologies</h2>
+        <p>We use cookies and similar technologies to enhance your experience, analyze trends, and collect data on your interactions with our platform. Cookies help us improve site performance, personalize your experience, and remember preferences.</p>
+    </section>
+
+    <section>
+        <h2>7. Children's Privacy</h2>
+        <p>Our services are not intended for children under 13 years of age, and we do not knowingly collect personal information from minors. If we become aware that we have inadvertently collected such information, we will promptly take steps to delete it.</p>
+    </section>
+
+    <section>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal obligations. Any changes will be posted on this page, and the "Effective Date" will be updated. We encourage you to review this Privacy Policy regularly.</p>
+    </section>
+
+
+    <footer>
+        <p><strong>Disclaimer:</strong> This Privacy Policy is for general informational purposes. For legal accuracy, it is advisable to consult with a legal professional to ensure compliance with applicable laws such as GDPR, CCPA, etc.</p>
+    </footer>
+</body>
+</html>
